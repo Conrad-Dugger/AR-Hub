@@ -10,26 +10,34 @@
     <script>
       window.onload = function () {
         document
-          .querySelector(".ar-button")
+          .querySelector(".ar-button-barcode")
           .addEventListener("click", function () {
             // alert("Hi there!");
             location.href = 'demos/barcodes.html';
           });
+          .querySelector(".ar-button-image")
+          .addEventListener("click", function () {
+            // alert("Hi there!");
+            location.href = 'demos/images.html';
+          });          
       };
     </script>
 
     <body style="margin : 0px; overflow: hidden;">  
 
       <div class="buttons">
-        <button class="ar-button">Barcode Demo?</button>
+        <button class="ar-button-barcode">Barcode Demo1</button>
       </div>
+      <div class="buttons">
+        <button class="ar-button-image">Image Demo2</button>
+      </div>      
 
     </body>     
 
 <!--     <body> 
       <a href="demos/barcodes.html">my link</a> *********** working
       <div class="buttons">
-        <button class="AR-Hub/ar-button">Barcode Demo!</button>
+        <button class="AR-Hub/ar-button-barcode">Barcode Demo!</button>
       </div>      
     </body>    
  -->
@@ -46,7 +54,7 @@
         z-index: 10;
       }
 
-      .ar-button {
+      .ar-button-barcode {
         padding: 0.25em;
         border-radius: 8px;
         border: none;
@@ -55,6 +63,16 @@
         width: 8em;
         height: 4em;
       }
+
+      .ar-button-image {
+        padding: 0.25em;
+        border-radius: 8px;
+        border: none;
+        background: greenyellow;
+        color: black;
+        width: 8em;
+        height: 4em;
+      }      
     </style>
 
 </html>
