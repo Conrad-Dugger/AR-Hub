@@ -43,12 +43,30 @@
         arjs="trackingMethod: best; sourceType: webcam;debugUIEnabled: false;"
       >
           <a-assets>
-              <a-asset-item id="Medallion_Fire" src="https://raw.githubusercontent.com/Conrad-Dugger/AR-Assets/main/MedallionFire/Models/MedallionFire.gltf"></a-asset-item>
+            <a-asset-item id="Medallion_Fire" src="https://raw.githubusercontent.com/Conrad-Dugger/AR-Assets/main/MedallionFire/Models/MedallionFire.gltf"></a-asset-item>
+            <a-asset-item id="Rupee_Blue"     src="https://raw.githubusercontent.com/Conrad-Dugger/AR-Assets/main/RupeeBlue/Models/RupeeBlue.gltf"></a-asset-item>            
+
           </a-assets>      
 
           <!-- IMAGE TRACKING = wrap an entity* in <a-nft> -->
           <!-- create the Image Descriptors here: https://carnaux.github.io/NFT-Marker-Creator/#/ -->
           <!-- *note here that an <a-asset-item> works for the gltf model, but not for the url to Image Descriptors -->
+          <a-nft
+            type="nft"
+            url="https://raw.githubusercontent.com/Conrad-Dugger/AR-Assets/main/RupeeBlue/Descriptors/jewels"
+            smooth="true"
+            smoothCount="10"
+            smoothTolerance=".01"
+            smoothThreshold="5">
+            <a-entity
+                id="rupee_entity"
+                gltf-model="#Rupee_Blue"
+                scale="100 100 100"
+                position="15 -5 -45"
+                rotation="-90 0 0">
+            </a-entity>          
+          </a-nft>
+
           <a-nft
             type="nft"
             url="https://raw.githubusercontent.com/Conrad-Dugger/AR-Assets/main/MedallionFire/Descriptors/Medallions300dpi"
