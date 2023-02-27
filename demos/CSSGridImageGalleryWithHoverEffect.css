@@ -35,9 +35,16 @@ body {
   padding: 1rem;
 }
 
-.image-grid {
+/*.image-grid {
   -webkit-transform: rotateX(45deg) rotateZ(45deg);
   transform: rotateX(45deg) rotateZ(45deg);
+  -webkit-perspective: 1000px;
+  perspective: 1000px;
+}*/
+
+.image-grid {
+  -webkit-transform: rotateX(10deg) rotateZ(10deg);
+  transform: rotateX(10deg) rotateZ(10deg);
   -webkit-perspective: 1000px;
   perspective: 1000px;
 }
