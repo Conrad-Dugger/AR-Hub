@@ -13,7 +13,6 @@
         document
           .querySelector(".test-button")
           .addEventListener("click", function () {
-
             var rupeeEntity = document.querySelector('#rupee_entity');
             var fireEntity = document.querySelector('#fire_entity');
             var fireEntity2 = document.querySelector('#fire_entity2');
@@ -33,15 +32,14 @@
             // // });        
             // // entityEl.setAttribute('position', {x: 1, y: 2, z: -3});
             // // entityEl.object3D.position.set(1, 2, -3)   
-
-          });
+          });      
       };
     </script>
 
     <body style="margin : 0px; overflow: hidden;">
   
       <div class="buttons">
-        <button class="test-button">Upscale Model</button>
+        <button class="test-button">Upscale Models</button>
       </div>
 
       <a-scene id="ar_scene" embedded arjs="sourceType: webcam; debugUIEnabled: false; detectionMode: mono_and_matrix; matrixCodeType: 3x3;">

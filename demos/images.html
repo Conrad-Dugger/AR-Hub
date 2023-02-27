@@ -12,15 +12,15 @@
         document
           .querySelector(".test-button")
           .addEventListener("click", function () {
-            // alert("Hi there!");
+            var rupeeEntity = document.querySelector('#rupee_entity');
             var fireEntity = document.querySelector('#fire_entity');
 
             try {
-                fireEntity.object3D.scale.set(200, 200, 200);   
+                rupeeEntity.object3D.scale.set(50, 50, 50);
+                fireEntity.object3D.scale.set(200, 200, 200);
             } catch (err) {
                 console.error(err) // will log the error with the error stack
             } 
-
           });
       };
     </script>
@@ -28,7 +28,7 @@
     <body style="margin : 0px; overflow: hidden;">
   
       <div class="buttons">
-        <button class="test-button">Upscale Model</button>
+        <button class="test-button">Upscale Models</button>
       </div>
 
       <!-- text shown until image descriptors are loaded -->
@@ -61,7 +61,7 @@
             <a-entity
                 id="rupee_entity"
                 gltf-model="#Rupee_Blue"
-                scale="20 20 20"
+                scale="30 30 30"
                 position="15 -5 -35"
                 rotation="-90 0 0">
             </a-entity>          
