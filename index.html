@@ -1,70 +1,39 @@
+<!-- https://codepen.io/blackellis/pen/zYveXEW -->
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
-    </head>
+  <head>
+    <title>Hover Effect</title>
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="index.css">
+  </head>
 
-    <script>
-      window.onload = function () {
-        document
-          .querySelector(".ar-button-barcode")
-          .addEventListener("click", function () {
-            // alert("Hi there!");
-            location.href = 'demos/CSSGridImageGalleryWithHoverEffect.html';
-          });   
-      };
-    </script>
+  <div class="grid image-grid">
 
-    <body style="margin : 0px; overflow: hidden;">  
-
-      <div class="buttons">
-        <button class="ar-button-barcode">Website</button>
+    <div class="grid-block">
+      <div class="tile">
+        <a class="tile-link" href="https://conrad-dugger.github.io/AR-Hub/barcodes.html">
+          <img class="tile-img tile-img6" src="https://raw.githubusercontent.com/Conrad-Dugger/AR-Assets/main/HoverTiles/qr-code-barcodes.png" alt="qr-code-barcodes">
+        </a>
       </div>
-<!--       <div class="buttons">
-        <button class="ar-button-image">Image Demo2</button>
-      </div>  -->     
+    </div>
 
-    </body>     
+    <div class="grid-block">
+      <div class="tile">
+        <a class="tile-link" href="https://conrad-dugger.github.io/AR-Hub/demos/retro.html">
+          <img class="tile-img tile-img7" src="https://raw.githubusercontent.com/Conrad-Dugger/AR-Assets/main/HoverTiles/qr-code-images.png" alt="qr-code-images">
+        </a>
+      </div>
+    </div>
 
-<!--     <body> 
-      <a href="demos/barcodes.html">my link</a> *********** working
-      <div class="buttons">
-        <button class="AR-Hub/ar-button-barcode">Barcode Demo!</button>
-      </div>      
-    </body>    
- -->
-    <style>
-      .buttons {
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        width: 100%;
-        height: 5em;
-        display: flex;
-        justify-content: center;
-        align-items: bottom;
-        z-index: 10;
-      }
+    <div class="grid-block">
+      <div class="tile">
+        <a class="tile-link" href="https://conrad-dugger.github.io/AR-Hub/images.html">
+          <img class="tile-img tile-img7" src="https://raw.githubusercontent.com/Conrad-Dugger/AR-Assets/main/HoverTiles/qr-code-images.png" alt="qr-code-images">
+        </a>
+      </div>
+    </div>
 
-      .ar-button-barcode {
-        padding: 0.25em;
-        border-radius: 8px;
-        border: none;
-        background: blueviolet;
-        color: black;
-        width: 12em;
-        height: 3em;
-      }
-
-      .ar-button-image {
-        padding: 0.25em;
-        border-radius: 8px;
-        border: none;
-        background: forestgreen;
-        color: black;
-        width: 6em;
-        height: 6em;
-      }      
-    </style>
+  </div>
 
 </html>
