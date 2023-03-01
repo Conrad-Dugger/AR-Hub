@@ -37,9 +37,10 @@ h1 {
   margin: 0;
   transform: skew(-15deg);
   letter-spacing: 0.03em;
-  
+ 
+
   &::after {
-    content: '';
+    content: "";
     position: absolute;
     top: -0.1em;
     right: 0.05em;
@@ -51,6 +52,8 @@ h1 {
       radial-gradient(rgba(white, 0.2) 50%, transparent 60%) 50% 50% / 70% 5%;
     background-repeat: no-repeat;
   }
+
+
   
   span:first-child {
     display: block;
